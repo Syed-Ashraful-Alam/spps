@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #progressbar {
+            background-color: black;
+            border-radius: 13px;
+            padding: 3px;
+        }
+
+        #progressbar>div {
+            background-color: aqua;
+            width: 70%;
+            height: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2><a href="#About">About Me</a></h2>
+        <h2><a href="#projects">Projects</a></h2>
+        <h2><a href="#Skills">Skills</a></h2>
+        <h2><a href="#contact">Contact</a></h2>
+        </div>
+    </nav>
+
+    <section id="Home" class="top-section flexible-content">
+
+        <div class="half-width">
+            <h1>Welcome To <span class="aqua-color">My portfolio</span></h1>
+            <h2>I'm <span class="aqua-color">Syed Ashraful Alam</span></h2>
+            <h3>Junior Web Developer and undergraduate student</h3>
+            <p>Studying the web development inspires me to excel in computer science 
+                because nothing else like it exists. Throughout my years as 
+                a computer science student, I've encountered a wide range of 
+                course subjects and programming languages. However, as soon 
+                as I was exposed to web programming, it piqued my curiosity. 
+                I felt like I'd discovered my calling, and I was looking forward 
+                to seeing where my work would lead me. My ambition is to become 
+                a well-known senior web developer for various well-known companies 
+                in multiple locations worldwide.</p>
+            <a class="link-button" target="_blank"
+                href="">Hire Me</a>
+         </div>
+        <div class="half-width"><img src="images/My_Image.png" alt=""></div>
+    </section>
+    <section id="About" class="dream flexible-content">
+        <div class="half-width">
+            <img src="images/development.jpg" alt="">
+        </div>
+        <div class="half-width">
+            <h1>About Me<span class="aqua-color"></span></h1>
+            <p>Hi! This is Syed Ashraful Alam. I am an undergraduate student. I study 
+                at American International University-Bangladesh (AIUB). I'm from 
+                the CSE department. I am a junior web developer. I have two years 
+                of experience in competitive programming. I've solved many problems 
+                at UVa Online Judge. My hobby is photography. Besides, I like playing 
+                games and traveling. I'd like to work as a web developer. I am learning 
+                HTML, CSS, and PHP. I'm determined to work as a web developer. This is 
+                a field in which I am quite enthusiastic. My ambition is to work as a web developer. 
+            </p>
+            <a class="link-button" target="_blank"
+                href="">Download Resume</a>
+        </div>
+    </section>
+    <section id="Skills" class="skill-section  ">
+        <h1 id="skills">Skills</h1>
+        <div class="flexible-content">
+            <div class="skill-item">
+                <h3>C++</h3>
+                <div id="progressbar">
+
+                    <div>90%</div>
+                </div>
+
+                <h3>JAVA</h3>
+                <div id="progressbar">
+
+                    <div>85%</div>
+                </div>
+
+                <h3>C#</h3>
+                <div id="progressbar">
+
+                    <div>80%</div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div id="progressbar">
+
+                    <div>70%</div>
+                </div>
+                <h3>CSS</h3>
+                <div id="progressbar">
+
+                    <div>65%</div>
+                </div>
+                <h3>PYTHON</h3>
+                <div id="progressbar">
+
+                    <div>60%</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="projects" class="project-section">
+
+        <h1 id="Projects">Projects</h1>
+        <div class="flexible-content">
+            <div id="cpp" class="project-item">
+                <h2>C++</h2>
+                <h3 class="aqua-color">
+                    Library Management System in C++
+                </h3>
+                <p>The project is associated with data storage in relation to the library. It aids in the maintenance of 
+                    data pertaining to the issuing and receiving of books by students and others. The library management 
+                    system contextual case study presents the library management student's case analysis. I strictly follow 
+                    object-oriented programming rules while doing this project.</p>
+            </div>
+            
+            <div id="cpp" class="project-item">
+                <h2>C#</h2>
+                <h3 class="aqua-color">
+                    Hospital Management System in C#
+                </h3>
+                <p>The hospital management system handles different directions of clinic workflows. The hospitals must keep track
+                     of their daily activities & records of their administrators, patients, doctors, nurses, ward boys, and other
+                      staff personals that keep the hospital running smoothly & successfully. I made the project user-friendly​ with
+                       OOP concepts and included the covid-19 unit for maintenance and monitoring the treatments.</p>
+            </div>
+
+<div id="java" class="project-item">
+                <h2>JAVA</h2>
+                <h3 class="aqua-color">
+                    Bank Management System in Java
+                </h3>
+                <p>The Bank Management System is a concept for storing information about a customer's account. The user can 
+                    conduct all actions here, including creating an account, depositing money, withdrawing money, and checking 
+                    their balance. You can also check all account holder information, close or delete an account, and make changes
+                     to an account. This project is fully constructed according to Object-oriented programming concepts.</p>
+            </div>
+
+            <div id="java" class="project-item">
+                <h2>PHP</h2>
+                <h3 class="aqua-color">
+                    Online Book Shop Project in PHP 
+                </h3>
+                <p>Online Book Shop is a really useful and time-saving tool for booksellers who want to sell their books online and make 
+                    a lot of money. Customers can buy any books they want without going to a bookstore as long as they have a computer or
+                     a cell phone with an internet connection. This project aims to increase online book sales in this pandemic situation
+                      which is essential in people’s lives nowadays. I include an admin section and the user section.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="contact-section">
+
+        <h1 id="contacts">Contact</h1>
+        <div class="flexible-content">
+            <div id="information" class="contact-item">
+                <h2 class="aqua-color">
+                    Contact With Me 
+                </h2>
+                
+                <h2>
+                    Email:  audreen.xibon@gmail.com
+                </h2>
+
+                <h2>
+                    Phone:  01676595455
+                </h2>
+
+                <h2>
+                    Address:  House: 225, Block: A, Banashree, Rampura, Dhaka - 1219
+                </h2>
+
+            </div>
+            <div id="message" class="contact-item">
+                <h2 class="aqua-color">
+                    Send Message 
+                </h2>
+                <input class="email" type="Name" placeholder="Enter your name"><br>
+                <input class="email" type="text" placeholder="Enter your Phone Number"><br>
+                <textarea class="email" name="message" rows="10" required placeholder="Enter Your Message"></textarea><br>
+                <input class="input-button" type="button" value="submit">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>&copy;2021 All rights reserved by Syed Ashraful Alam </p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
