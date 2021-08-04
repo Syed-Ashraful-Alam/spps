@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+<style>
+
+body{
+            background-color: rgb(220, 255, 255);
+            font-family: sans-serif;
+            font-weight: 275;
+        }
+
+.container{
+    display: flex;
+            max-width: 850px;
+            min-height: 220px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid aqua;
+            margin: 20px auto;
+            padding: 5px;
+            border-radius: 10px;
+            cursor:grab;
+            background-color: white;
+}
+.container:hover{
+            box-shadow: 10px 10px 10px rgb(149, 110, 110);
+        }
+
+.mid{
+    width: 35%;
+    margin:150px auto;
+}
+#grab{
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="mid">
+            <button id="grab">Load Github Users</button>
+            <h1>Github Users</h1>
+            <section id="user-content"></section>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('grab').addEventListener('click' , loadFunction);
+        function loadFunction()
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET' , 'https://api.github.com/users');
+            xhr.onload = function(){
+                if(xhr.status == 200){
+                    var people = JSON.parse(xhr.responseText);
+                    console.log(people);
+                    var output = '';
+                    for(var i = 0 ; i < 12 ; i++)
+                    {
+                        output+= '<img height="300" weight="300" src="'+people[i].avatar_url+'">';
+                        output+= '<h1>ID: '+people[i].id+'</h1>';
+                        output+= '<h1>Login: '+people[i].login+'</h1>';
+                    }
+                    document.getElementById('user-content').innerHTML = output;
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
